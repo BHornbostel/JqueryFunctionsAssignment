@@ -1,0 +1,61 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>jQuery Functions</title>
+        <meta charset="UTF-8"></meta>
+        <link rel="Stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+       
+    </head>
+    <body>
+       
+        <div .class="appy">
+            <h1>Hide/Show</h1>
+            <button id="HB">Hide!</button>
+            <button id="SB">Show!</button>
+            <p id="HS">Click the button to hide or show this text!</p>
+        </div>
+        <script>
+                $( "#HB" ).click( function() {
+                    $( "#HS" ).hide( "fast", "linear");
+                });
+                $( "#SB" ).click( function() {
+                    $( "#HS" ).show( "fast", "linear");
+                });
+            </script> 
+        <div .class="appy">
+            <h1>Slide Up/Down</h1>
+            <button id="UB">UP!</button>
+            <button id="DB">Down!</button>
+            <p id="UD">Click the button to slide this text!</p>
+        </div>
+        <script>
+               $( "#UB" ).click( function() {
+                $( "#UD" ).slideUp( "fast", "linear");
+            });
+            $( "#DB" ).click( function() {
+                $( "#UD" ).slideDown( "fast", "linear");
+            });
+            </script> 
+        <div .class="appy">
+            <h1>Fade</h1>
+            <button id="FB">Click me!</button>
+            <p id="FS">Click the button to fade this text!</p>
+        </div>
+        <script>
+                $( "#FB" ).click( function() {
+                    $( "#FS" ).fadeToggle( "fast", "linear");
+                });
+            </script>  
+        <div .class="appy">
+            <h1>AddClass</h1>
+            <button id="ACB">Click me!</button>
+            <p id="AC">Click the button to make me red!</p>
+        </div>
+        <script>
+                $( "#ACB" ).click( function() {
+                    $( "#AC" ).addClass( "red");
+                });
+            </script> 
+    </body>
+</html>
